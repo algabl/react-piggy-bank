@@ -10,7 +10,7 @@ import AppDrawer from "./AppDrawer";
 const App = () => {
   const [total, setTotal] = useState(0);
   const [transactions, setTransactions] = useState([]);
-  const [goal, setGoal] = useState(1000);
+  const [goal, setGoal] = useState(2000);
   
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + '/transactions.json')
